@@ -1,27 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect, useState } from 'react';
+import style from './style.css';
 import Navbar from './Navbar';
 import BreweryContainer from './BreweryContainer';
 import Search from './Search';
 
-function App() {
+const App = () => {
+
+  const allBreweries = ("https://api.openbrewerydb.org/v1/breweries")
+
+  const [breweries, setBreweries] = useState([])
+
+  useEffect(() => {
+    fetch(allBreweries)
+      .then(res => res.json())
+      .then(breweryArray => setBreweries(breweryArray))
+  }, [])
+
+  console.log(breweries)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        <h1>Hello</h1>
+        <Navbar />
+        <BreweryContainer />
+        <Search />
     </div>
-  );
+  )
 }
-export default App;
+
+export default App
