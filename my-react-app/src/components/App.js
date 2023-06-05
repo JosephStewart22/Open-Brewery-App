@@ -20,7 +20,6 @@ const App = () => {
 
   return (
     <div>
-        <h1>Hello</h1>
         <Navbar />
         <BreweryContainer />
         <Search />
