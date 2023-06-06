@@ -1,1 +1,9 @@
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-gap: 70px;
+}
 

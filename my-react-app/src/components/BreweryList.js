@@ -1,9 +1,15 @@
-import React from 'react'
+import React, {Component} from 'react'
 import Brewery from './Brewery'
 
-const BreweryList = () => {
+const BreweryList = ({breweries}) => {
+
+  const renderAllBrewery = breweries.map((brewery) => {
+    return <Brewery brewery={brewery} key={brewery.id}/>
+  })
   return (
-    <div>BreweryList</div>
+     <div className='list'>
+        {renderAllBrewery}
+     </div>  
   )
 }
 
