@@ -1,5 +1,8 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Brewery from './Brewery'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 
 const BreweryList = ({breweries}) => {
 
@@ -40,9 +43,11 @@ const BreweryList = ({breweries}) => {
   })
 
   return (
-     <div className='list'>
-        {renderAllBrewery}
-     </div>  
+     <Container>
+        <Row xs={1} md={5}>
+          {renderAllBrewery}
+        </Row>
+     </Container> 
   )
 }
 

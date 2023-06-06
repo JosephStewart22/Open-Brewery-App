@@ -1,16 +1,14 @@
 import React, {useEffect, useState } from 'react';
 import style from './style.css';
-import Navbar from './Navbar';
+import Navigation from './Navigation';
 import BreweryContainer from './BreweryContainer';
-import Search from './Search';
 
 const App = () => {
 
   return (
     <div>
-        <Navbar />
+        <Navigation/>
         <BreweryContainer />
-        <Search />
     </div>
   )
 }

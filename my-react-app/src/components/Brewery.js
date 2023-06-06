@@ -1,22 +1,21 @@
-import React, {Component} from 'react'
-import {Card} from 'bootstrap-4-react'
+import React from 'react'
+import { Button } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import { render } from '@testing-library/react'
 
 const Brewery = ({brewery}) => {
 
   return (
-      <Card style={{ width: '18rem' }}>
-        <Card.Image src={brewery.image} />
-        <Card.Body>
-          <Card.Title>{brewery.name}, {brewery.brewery_type}</Card.Title>
-          <Card.Subtitle mb="2" text="muted">{brewery.state_province}, {brewery.country}</Card.Subtitle>
-          <Card.Text><strong>Brewery type: </strong>{brewery.brewery_type}</Card.Text>
-        </Card.Body>
-        <Card.Footer>
-          <Card.Link href="#">{brewery.website_url}</Card.Link>
-        </Card.Footer>
-      </Card>  
-  )
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={brewery.image} />
+      <Card.Body>
+        <Card.Title><a href={brewery.website_url}>{brewery.name}</a></Card.Title>
+        <Card.Text>
+          {brewery.city}, {brewery.state}
+        </Card.Text>
+        <Button variant="primary">Pet Friendly?</Button>
+      </Card.Body>
+    </Card>  )
 }
 
 export default Brewery
