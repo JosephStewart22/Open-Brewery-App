@@ -5,7 +5,9 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 
 const BreweryList = ({breweries}) => {
-
+ const brewCards = breweries.map((brewery) => (
+  <Brewery key={brewery.id} brewery={brewery} />
+ ))
   const imageArray = [
     "https://cdn.pixabay.com/photo/2012/07/26/20/55/barrels-52934_1280.jpg",
     "https://cdn.pixabay.com/photo/2017/06/24/23/41/beer-2439237_1280.jpg",
