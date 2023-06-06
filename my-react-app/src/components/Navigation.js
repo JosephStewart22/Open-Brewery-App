@@ -12,7 +12,8 @@ import { faMoon } from '@fortawesome/free-solid-svg-icons';
 const Navigation = ({onSearch, isDarkMode, setIsDarkMode}) => {
 const [search, setSearch] = useState("");
 
-const toggleDarkMode = () => {
+const toggleDarkMode = (e) => {
+  e.preventDefault()
   setIsDarkMode(!isDarkMode)
 }
 
@@ -32,14 +33,16 @@ function handleSearch(e) {
             navbarScroll
           >
             <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="">Add Brewery</Nav.Link>
             <NavDropdown title="Filter by Type" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Micro</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Nano</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">Brewpub</NavDropdown.Item>
+              <NavDropdown.Item href="#action3">Bar</NavDropdown.Item>
+
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                Something else here
+                Pet Friendly 🐶
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
