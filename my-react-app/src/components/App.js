@@ -9,8 +9,9 @@ const [breweries, setBreweries] = useState([])
 
 const allBreweries = ("https://api.openbrewerydb.org/v1/breweries")
 
-
   
+  const [isDarkMode, setIsDarkMode] = useState("false")
+
   useEffect(() => {
     fetch(allBreweries)
       .then(res => res.json())
@@ -18,12 +19,12 @@ const allBreweries = ("https://api.openbrewerydb.org/v1/breweries")
   }, [])
 
   const displayedBreweries = breweries.filter((brewery) => brewery.name.toLowerCase().includes(searchTerm.toLowerCase()))
-  
   return (
-    <div>
-        <Navigation searchTerm={searchTerm} onSetSearch={setSearchTerm}/>
-        <BreweryContainer  breweries={displayedBreweries}/>
-</div>
+    <div className={isDarkMode ? "light" : "dark"}>
+        <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} setSearchTerm={searchTerm}/>
+        <br /><br />
+        <BreweryContainer breweries={displayedBreweries} />
+    </div>
   )
 }
   export default App;

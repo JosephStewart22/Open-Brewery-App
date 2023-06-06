@@ -45,8 +45,8 @@ const BreweryList = ({breweries}) => {
   })
 
   return (
-     <Container>
-        <Row xs={1} md={5}>
+     <Container className='mx-auto'>
+        <Row xs={1} md={2} className='g-4'>
           {renderAllBrewery}
         </Row>
      </Container> 

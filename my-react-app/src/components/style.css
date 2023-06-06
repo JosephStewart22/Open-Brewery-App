@@ -1,2 +1,13 @@
+/* Dark Mode Toggle */
 
+.light {
+    background-color: white;
+    color:black;
+    transition-duration: 1s;
+}
 
+.dark {
+    background-color: black;
+    color: white;
+    transition-duration: 1s;
+}
