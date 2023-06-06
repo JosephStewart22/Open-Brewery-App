@@ -22,7 +22,8 @@ const allBreweries = ("https://api.openbrewerydb.org/v1/breweries")
   return (
     <div className={isDarkMode ? "light" : "dark"}>
         <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} onSearch={(setSearch)}/>
-        <BreweryContainer breweries={displayedBreweries}/>
+        <br /><br />
+        <BreweryContainer breweries={displayedBreweries} />
     </div>
   )
 }

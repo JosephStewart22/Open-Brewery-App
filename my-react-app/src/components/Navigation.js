@@ -43,7 +43,7 @@ function handleSearch(e) {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Button variant="outline-secondary" onClick={toggleDarkMode}>{isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} />}</Button>
+          <Button variant="outline-secondary" onClick={toggleDarkMode} className='me-2'>{isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} />}</Button>
           <Form className="d-flex" onSubmit={handleSearch}>
             <Form.Control
               type="search"
