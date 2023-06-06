@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -7,7 +7,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
-const Navigation = () => {
+const Navigation = ({onSearch}) => {
+const [search, setSearch] = useState("");
+
+function handleSearch(e) {
+  e.preventDefault()
+  onSearch(search)
+}
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
@@ -31,14 +37,15 @@ const Navigation = () => {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
+          <Form className="d-flex" onSubmit={handleSearch}>
             <Form.Control
               type="search"
               placeholder="Enter brewery name"
               className="me-2"
               aria-label="Search"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
             />
-            <Button variant="outline-success">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
