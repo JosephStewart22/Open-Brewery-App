@@ -5,29 +5,28 @@ import BreweryContainer from './BreweryContainer';
 import BreweryForm from './BreweryForm';
 
 const App = () => {
-const [search, setSearch] = useState("");
+const [searchTerm, setSearchTerm] = useState("");
+const [breweries, setBreweries] = useState([])
 
 const allBreweries = ("https://api.openbrewerydb.org/v1/breweries")
 
-  const [breweries, setBreweries] = useState([])
-
+  
   const [isDarkMode, setIsDarkMode] = useState("false")
 
   useEffect(() => {
     fetch(allBreweries)
       .then(res => res.json())
-      .then(breweryArray => setBreweries(breweryArray))
+      .then(setBreweries)
   }, [])
 
-  const displayedBreweries = breweries.filter((brewery) => brewery.name.toLowerCase().includes(search.toLowerCase()))
+  const displayedBreweries = breweries.filter((brewery) => brewery.name.toLowerCase().includes(searchTerm.toLowerCase()))
   return (
     <div className={isDarkMode ? "light" : "dark"}>
-        <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} onSearch={(setSearch)}/>
+        <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} setSearchTerm={searchTerm}/>
         <br /><br />
         <BreweryContainer breweries={displayedBreweries} />
         <BreweryForm />
     </div>
   )
 }
-
-export default App
+  export default App;

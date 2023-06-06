@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import Button from 'react-bootstrap/Button';
+import React from 'react'
+//import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
@@ -9,8 +9,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
-const Navigation = ({onSearch, isDarkMode, setIsDarkMode}) => {
-const [search, setSearch] = useState("");
+
+const Navigation = ({searchTerm, onSetSearch}) => {
 
 const toggleDarkMode = (e) => {
   e.preventDefault()
@@ -19,7 +19,7 @@ const toggleDarkMode = (e) => {
 
 function handleSearch(e) {
   e.preventDefault()
-  onSearch(search)
+  onSetSearch(e.target.value)
 }
   return (
     <Navbar bg="light" expand="lg" sticky='top'>
@@ -35,26 +35,30 @@ function handleSearch(e) {
             <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="">Add Brewery</Nav.Link>
             <NavDropdown title="Filter by Type" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action4">Micro</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Nano</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">Brewpub</NavDropdown.Item>
-              <NavDropdown.Item href="#action3">Bar</NavDropdown.Item>
-
+              <NavDropdown.Item href="#action3">Filter by Type</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">
+                Micro
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4">
+                Nano
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action4">
+                BrewPub
+              </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                Pet Friendly 🐶
+                Pet Friendly
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Button variant="outline-secondary" onClick={toggleDarkMode} className='me-2'>{isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} />}</Button>
-          <Form className="d-flex" onSubmit={handleSearch}>
+          <Form className="d-flex" >
             <Form.Control
               type="search"
               placeholder="Search for a brewery"
               className="me-2"
               aria-label="Search"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
+              value={searchTerm}
+              onChange={handleSearch}
             />
           </Form>
         </Navbar.Collapse>
