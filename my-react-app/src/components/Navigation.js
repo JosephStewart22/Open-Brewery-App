@@ -40,7 +40,7 @@ function handleSearch(e) {
           <Form className="d-flex" onSubmit={handleSearch}>
             <Form.Control
               type="search"
-              placeholder="Enter brewery name"
+              placeholder="Search for a brewery"
               className="me-2"
               aria-label="Search"
               value={search}
