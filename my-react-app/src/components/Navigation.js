@@ -5,17 +5,23 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
-
-const Navigation = ({onSearch}) => {
+const Navigation = ({onSearch, isDarkMode, setIsDarkMode}) => {
 const [search, setSearch] = useState("");
+
+const toggleDarkMode = () => {
+  setIsDarkMode(!isDarkMode)
+}
 
 function handleSearch(e) {
   e.preventDefault()
   onSearch(search)
 }
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="light" expand="lg" sticky='top'>
       <Container fluid>
         <Navbar.Brand href="#">The Brew List</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -37,6 +43,7 @@ function handleSearch(e) {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+          <Button variant="outline-secondary" onClick={toggleDarkMode}>{isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} />}</Button>
           <Form className="d-flex" onSubmit={handleSearch}>
             <Form.Control
               type="search"

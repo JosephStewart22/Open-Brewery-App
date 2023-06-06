@@ -13,7 +13,8 @@ const Brewery = ({brewery}) => {
         <Card.Text>
           {brewery.city}, {brewery.state}
         </Card.Text>
-        <Button variant="primary">Pet Friendly?</Button>
+        <Button variant="outline-primary">Pet Friendly?</Button>
+        <Button variant="outline-secondary">Delete</Button>
       </Card.Body>
     </Card>  )
 }
