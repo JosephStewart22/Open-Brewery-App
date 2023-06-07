@@ -9,14 +9,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
-<<<<<<< HEAD
 
 const Navigation = ({searchTerm, onSetSearch}) => {
 
-=======
-const Navigation = ({onSearch, isDarkMode, setIsDarkMode}) => {
-const [search, setSearch] = useState("");
->>>>>>> 409eca98f8b8e8b272a7baa776fe2eab5bbe4802
 
 const toggleDarkMode = () => {
   setIsDarkMode(!isDarkMode)
@@ -49,12 +44,7 @@ function handleSearch(e) {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-<<<<<<< HEAD
           <Form className="d-flex" >
-=======
-          <Button variant="outline-secondary" onClick={toggleDarkMode} className='me-2'>{isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} />}</Button>
-          <Form className="d-flex" onSubmit={handleSearch}>
->>>>>>> 409eca98f8b8e8b272a7baa776fe2eab5bbe4802
             <Form.Control
               type="search"
               placeholder="Search for a brewery"
