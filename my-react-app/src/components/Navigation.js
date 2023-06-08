@@ -1,5 +1,4 @@
 import React from 'react'
-//import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button  from 'react-bootstrap/Button';
@@ -33,7 +32,6 @@ function handleSearch(e) {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
             <Nav.Link href="">Add Brewery</Nav.Link>
             <NavDropdown title="Filter by Type" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action4">

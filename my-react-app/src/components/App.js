@@ -3,12 +3,14 @@ import style from './style.css';
 import Navigation from './Navigation';
 import BreweryContainer from './BreweryContainer';
 import BreweryForm from './BreweryForm';
+import { Switch, Route } from 'react-router-dom';
+
 
 const App = () => {
 const [searchTerm, setSearchTerm] = useState("");
 const [breweries, setBreweries] = useState([])
 
-const allBreweries = ("https://api.openbrewerydb.org/v1/breweries")
+const allBreweries = ("http://localhost:4000/breweries")
 
   
   const [isDarkMode, setIsDarkMode] = useState("false")
@@ -24,8 +26,16 @@ const allBreweries = ("https://api.openbrewerydb.org/v1/breweries")
     <div className={isDarkMode ? "light" : "dark"}>
         <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} setSearchTerm={searchTerm}/>
         <br /><br />
-        <BreweryContainer breweries={displayedBreweries} />
-        <BreweryForm />
+        <Switch>
+        <Route 
+          path='/breweries'
+          render={() => <BreweryContainer breweries={displayedBreweries} /> }
+          />        
+        <Route 
+          path='/add-brewery'
+          render={() => <BreweryForm /> }
+          />
+        </Switch>
     </div>
   )
 }

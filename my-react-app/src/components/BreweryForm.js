@@ -8,7 +8,7 @@ const BreweryForm = () => {
                   width: 700, 
                   padding: 30 }}
                   className='m-auto'>
-      <h4>Don't see a brewery? Add it!</h4>
+      <h4>Don't see a 🍻 brewery? Add it!</h4>
       <Form id='brewery-form'>
       <Form.Group>
           <Form.Label>Brewery name:</Form.Label>
@@ -32,10 +32,13 @@ const BreweryForm = () => {
            </Form.Select>        
        </Form.Group>
        <Form.Group>
-          <Form.Label>Thumbnail</Form.Label>
-          <Form.Control type="text" placeholder="Enter image source url" />
-        </Form.Group>
-
+          <Form.Check 
+            type='checkbox'
+            name='pet-friendly'
+            id='pet-friendly'
+            label="🐶 Pet-Friendly?"
+          />
+       </Form.Group>
         <Form.Group>
           <Form.Label>Address:</Form.Label>
           <Form.Control type="text" placeholder="Enter address" />
