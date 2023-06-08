@@ -56,6 +56,8 @@ function handleSubmit(e) {
                   className='m-auto'>
       <h4>Don't see a brewery? Add it!</h4>
       <Form id='brewery-form' onSubmit={handleSubmit}>
+      <h4>Don't see a 🍻 brewery? Add it!</h4>
+      <Form id='brewery-form'>
       <Form.Group>
           <Form.Label>Brewery name:</Form.Label>
           <Form.Control name="name" type="text" 
@@ -78,10 +80,13 @@ function handleSubmit(e) {
            </Form.Select>        
        </Form.Group>
        <Form.Group>
-          <Form.Label>Thumbnail</Form.Label>
-          <Form.Control name="thumbnail" type="text" placeholder="Enter image source url" value={formData.image} onChange={handleChange}/>
-        </Form.Group>
-
+          <Form.Check 
+            type='checkbox'
+            name='pet-friendly'
+            id='pet-friendly'
+            label="🐶 Pet-Friendly?"
+          />
+       </Form.Group>
         <Form.Group>
           <Form.Label>Address:</Form.Label>
           <Form.Control name="address" type="text" placeholder="Enter address" />
@@ -113,6 +118,7 @@ function handleSubmit(e) {
         <Button variant="primary" type="submit">
            Add brewery
         </Button>
+      </Form>
       </Form>
     </div>  
     )

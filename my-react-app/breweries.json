@@ -16,7 +16,12 @@
       "phone": "4058160490",
       "website_url": "http://www.405brewing.com",
       "state": "Oklahoma",
+<<<<<<< HEAD
       "street": "1716 Topeka St"
+=======
+      "street": "1716 Topeka St",
+      "pet_friendly": true
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "9c5a66c8-cc13-416f-a5d9-0a769c87d318",
@@ -34,7 +39,12 @@
       "phone": "5129211545",
       "website_url": "http://www.512brewing.com",
       "state": "Texas",
+<<<<<<< HEAD
       "street": "407 Radam Ln Ste F200"
+=======
+      "street": "407 Radam Ln Ste F200",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "ef970757-fe42-416f-931d-722451f1f59c",
@@ -52,7 +62,12 @@
       "phone": "6195782311",
       "website_url": "http://10barrel.com",
       "state": "California",
+<<<<<<< HEAD
       "street": "1501 E St"
+=======
+      "street": "1501 E St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "6d14b220-8926-4521-8d19-b98a2d6ec3db",
@@ -70,7 +85,12 @@
       "phone": "5415851007",
       "website_url": "http://www.10barrel.com",
       "state": "Oregon",
+<<<<<<< HEAD
       "street": "62970 18th St"
+=======
+      "street": "62970 18th St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "e2e78bd8-80ff-4a61-a65c-3bfbd9d76ce2",
@@ -88,7 +108,12 @@
       "phone": "5415851007",
       "website_url": null,
       "state": "Oregon",
+<<<<<<< HEAD
       "street": "1135 NW Galveston Ave Ste B"
+=======
+      "street": "1135 NW Galveston Ave Ste B",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "e432899b-7f58-455f-9c7b-9a6e2130a1e0",
@@ -106,7 +131,12 @@
       "phone": "5032241700",
       "website_url": "http://www.10barrel.com",
       "state": "Oregon",
+<<<<<<< HEAD
       "street": "1411 NW Flanders St"
+=======
+      "street": "1411 NW Flanders St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "9f1852da-c312-42da-9a31-097bac81c4c0",
@@ -124,7 +154,12 @@
       "phone": "5415851007",
       "website_url": null,
       "state": "Oregon",
+<<<<<<< HEAD
       "street": "62950 NE 18th St"
+=======
+      "street": "62950 NE 18th St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "ea4f30c0-bce6-416b-8904-fab4055a7362",
@@ -142,7 +177,12 @@
       "phone": "2083445870",
       "website_url": "http://www.10barrel.com",
       "state": "Idaho",
+<<<<<<< HEAD
       "street": "826 W Bannock St"
+=======
+      "street": "826 W Bannock St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "1988eb86-f0a2-4674-ba04-02454efa0d31",
@@ -160,7 +200,12 @@
       "phone": "7205738992",
       "website_url": null,
       "state": "Colorado",
+<<<<<<< HEAD
       "street": "2620 Walnut St"
+=======
+      "street": "2620 Walnut St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "1ecc330f-6275-42a5-b14e-00adbed62752",
@@ -178,7 +223,12 @@
       "phone": "7755307014",
       "website_url": "http://www.10torr.com",
       "state": "Nevada",
+<<<<<<< HEAD
       "street": "490 Mill St"
+=======
+      "street": "490 Mill St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "7531dbd8-afc9-4b5b-95bc-7ece7f2c0bf3",
@@ -196,7 +246,12 @@
       "phone": "6308165790",
       "website_url": null,
       "state": "Indiana",
+<<<<<<< HEAD
       "street": "400 Brown Cir"
+=======
+      "street": "400 Brown Cir",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "03118499-a3d0-4c22-860d-4529509ae095",
@@ -214,7 +269,12 @@
       "phone": "3607656485",
       "website_url": "http://www.101brewery.com",
       "state": "Washington",
+<<<<<<< HEAD
       "street": "294793 US Highway 101"
+=======
+      "street": "294793 US Highway 101",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "5ae467af-66dc-4d7f-8839-44228f89b596",
@@ -232,7 +292,12 @@
       "phone": "7077534934",
       "website_url": "http://www.101northbeer.com",
       "state": "California",
+<<<<<<< HEAD
       "street": "1304 Scott St Ste D"
+=======
+      "street": "1304 Scott St Ste D",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "4ffda196-dd59-44a5-9eeb-5f7fd4b58f5a",
@@ -250,7 +315,12 @@
       "phone": "3033257321",
       "website_url": "http://www.105westbrewing.com",
       "state": "Colorado",
+<<<<<<< HEAD
       "street": "1043 Park St"
+=======
+      "street": "1043 Park St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "42aa37d5-8384-4ffe-8c81-7c982eff0384",
@@ -268,7 +338,12 @@
       "phone": "7633924753",
       "website_url": "http://10KBrew.com",
       "state": "Minnesota",
+<<<<<<< HEAD
       "street": "2005 2nd Ave"
+=======
+      "street": "2005 2nd Ave",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "232e8f62-9afc-45f5-b4bc-582c26b5c43b",
@@ -286,7 +361,12 @@
       "phone": "7813071554",
       "website_url": "http://www.10thdistrictbrewing.com",
       "state": "Massachusetts",
+<<<<<<< HEAD
       "street": "491 Washington St"
+=======
+      "street": "491 Washington St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "08f78223-24f8-4b71-b381-ea19a5bd82df",
@@ -304,7 +384,12 @@
       "phone": "2814442337",
       "website_url": "http://www.11belowbrewing.com",
       "state": "Texas",
+<<<<<<< HEAD
       "street": "6820 Bourgeois Rd"
+=======
+      "street": "6820 Bourgeois Rd",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "58293321-14ae-49d7-9a7b-08436c9e63a6",
@@ -322,7 +407,12 @@
       "phone": "5415751188",
       "website_url": "http://www.1188brewing.com",
       "state": "Oregon",
+<<<<<<< HEAD
       "street": "141 E Main St"
+=======
+      "street": "141 E Main St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "e5f3e72a-fee2-4813-82cf-f2e53b439ae6",
@@ -340,7 +430,12 @@
       "phone": "353599107299",
       "website_url": "https://12acresbrewing.ie/",
       "state": "Laois",
+<<<<<<< HEAD
       "street": "Unnamed Street"
+=======
+      "street": "Unnamed Street",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "d81ff708-b5d2-478f-af6a-6d40f5beb9ac",
@@ -358,7 +453,12 @@
       "phone": "7169066600",
       "website_url": "http://www.12gatesbrewing.com",
       "state": "New York",
+<<<<<<< HEAD
       "street": "80 Earhart Dr Ste 20"
+=======
+      "street": "80 Earhart Dr Ste 20",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "fb94830f-6196-4f59-9189-c9060b778085",
@@ -376,7 +476,12 @@
       "phone": "6023395014",
       "website_url": "http://www.12westbrewing.com",
       "state": "Arizona",
+<<<<<<< HEAD
       "street": "3000 E Ray Rd Bldg 6"
+=======
+      "street": "3000 E Ray Rd Bldg 6",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "0faa0fb2-fffa-416d-9eab-46f67477c8ef",
@@ -394,7 +499,12 @@
       "phone": null,
       "website_url": null,
       "state": "Arizona",
+<<<<<<< HEAD
       "street": null
+=======
+      "street": null,
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "e54c2f02-acd6-4172-861d-fcfa54c8701a",
@@ -412,7 +522,12 @@
       "phone": "3603063285",
       "website_url": "https://www.122westbrew.com/",
       "state": "Washington",
+<<<<<<< HEAD
       "street": "2416 Meridian St"
+=======
+      "street": "2416 Meridian St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "d5cb896d-3e99-4e19-9693-5e06ce987e53",
@@ -430,7 +545,12 @@
       "phone": "5172581346",
       "website_url": null,
       "state": "Michigan",
+<<<<<<< HEAD
       "street": "3090 Shirley Dr"
+=======
+      "street": "3090 Shirley Dr",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "06e9fffb-e820-45c9-b107-b52b51013e8f",
@@ -448,7 +568,12 @@
       "phone": "3035791004",
       "website_url": "http://www.12degree.com",
       "state": "Colorado",
+<<<<<<< HEAD
       "street": "820 Main St"
+=======
+      "street": "820 Main St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "50521ef7-f543-4c5d-98b1-0d0ee1a2be01",
@@ -466,7 +591,12 @@
       "phone": "6514938106",
       "website_url": "http://www.12welveEyes.com",
       "state": "Minnesota",
+<<<<<<< HEAD
       "street": "141 E 4th St Ste LL2"
+=======
+      "street": "141 E 4th St Ste LL2",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "950180bd-29c9-46b3-ad0c-e6f09799ec7f",
@@ -484,7 +614,12 @@
       "phone": "5139750613",
       "website_url": "http://www.13belowbrewery.com",
       "state": "Ohio",
+<<<<<<< HEAD
       "street": "7391 Forbes Rd"
+=======
+      "street": "7391 Forbes Rd",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "45119c56-345b-4adc-b481-c5cf7bfe98c4",
@@ -502,7 +637,12 @@
       "phone": "8643491430",
       "website_url": "http://www.13StripesBrewery.com",
       "state": "South Carolina",
+<<<<<<< HEAD
       "street": "250 Mill St, Suite PW3101"
+=======
+      "street": "250 Mill St, Suite PW3101",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "936c3d7e-5d54-4459-b72c-117cdda059b4",
@@ -520,7 +660,12 @@
       "phone": "5032393831",
       "website_url": "http://www.13virtuesbrewing.com",
       "state": "Oregon",
+<<<<<<< HEAD
       "street": "6410 SE Milwaukie Ave"
+=======
+      "street": "6410 SE Milwaukie Ave",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "5c53b314-ebab-4e3e-89be-e4139d9318ae",
@@ -538,7 +683,12 @@
       "phone": "9199775654",
       "website_url": "http://www.1323rnd.com",
       "state": "North Carolina",
+<<<<<<< HEAD
       "street": "1323 Capital Blvd 1323 R and D"
+=======
+      "street": "1323 Capital Blvd 1323 R and D",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "4788221a-a03b-458c-9084-4cadd69ade6d",
@@ -556,7 +706,12 @@
       "phone": "8186996165",
       "website_url": "http://14cannons.com",
       "state": "California",
+<<<<<<< HEAD
       "street": "31125 Via Colinas Ste 907"
+=======
+      "street": "31125 Via Colinas Ste 907",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "b7b68d22-5045-4501-b9bf-ec94946eaffc",
@@ -574,7 +729,12 @@
       "phone": "2186924129",
       "website_url": null,
       "state": "Minnesota",
+<<<<<<< HEAD
       "street": null
+=======
+      "street": null,
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "4b677b60-fef1-42e2-90ef-dadc1bd7fb06",
@@ -592,7 +752,12 @@
       "phone": "7207731437",
       "website_url": "http://www.14erBrewing.com",
       "state": "Colorado",
+<<<<<<< HEAD
       "street": "2801 Walnut St"
+=======
+      "street": "2801 Walnut St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "6c53984f-fac1-4ea7-9c44-44e25897c71a",
@@ -610,7 +775,12 @@
       "phone": "8025285988",
       "website_url": "http://www.14thstarbrewing.com",
       "state": "Vermont",
+<<<<<<< HEAD
       "street": "133 N Main St Ste 7"
+=======
+      "street": "133 N Main St Ste 7",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "85192a9c-58a4-48c3-bd9d-496d09d22aa3",
@@ -628,7 +798,12 @@
       "phone": "5134863672",
       "website_url": "http://www.16lots.com",
       "state": "Ohio",
+<<<<<<< HEAD
       "street": "753 Reading Rd"
+=======
+      "street": "753 Reading Rd",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "284b44f8-6ccb-4cd6-8d06-f2ad882a47c3",
@@ -646,7 +821,12 @@
       "phone": "3022538816",
       "website_url": "http://www.16milebrewery.com",
       "state": "Delaware",
+<<<<<<< HEAD
       "street": "413 S Bedford St"
+=======
+      "street": "413 S Bedford St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "ee6d39c6-092f-4623-8099-5b8643f70dbe",
@@ -664,7 +844,12 @@
       "phone": "3158658500",
       "website_url": "http://www.16stonebrewpub.com",
       "state": "New York",
+<<<<<<< HEAD
       "street": "9542 Main St"
+=======
+      "street": "9542 Main St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "d35b40b0-a3ff-4878-a6ee-9caa2149b521",
@@ -682,7 +867,12 @@
       "phone": null,
       "website_url": null,
       "state": "Maryland",
+<<<<<<< HEAD
       "street": "1146 colonel Joshua Ct"
+=======
+      "street": "1146 colonel Joshua Ct",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "84bd3b3c-bd2d-4e07-bc31-b43a8c8ebf4c",
@@ -700,7 +890,12 @@
       "phone": "5152437868",
       "website_url": "http://1717brewing.com",
       "state": "Iowa",
+<<<<<<< HEAD
       "street": "322 E Court Ave"
+=======
+      "street": "322 E Court Ave",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "f41a0c47-ba9b-4547-bfed-fcbefe0fc74b",
@@ -718,7 +913,12 @@
       "phone": "2529282337",
       "website_url": "http://www.ocracokebrewing.com",
       "state": "North Carolina",
+<<<<<<< HEAD
       "street": "1129 Irvin Garrish Hwy"
+=======
+      "street": "1129 Irvin Garrish Hwy",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "84d621c4-81a5-44e6-aca7-1566c2e67cc0",
@@ -736,7 +936,12 @@
       "phone": "5408412598",
       "website_url": null,
       "state": "Virginia",
+<<<<<<< HEAD
       "street": "11109 Plank Rd"
+=======
+      "street": "11109 Plank Rd",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "896f26a1-d80e-4790-9287-026a86c1799d",
@@ -754,7 +959,12 @@
       "phone": "4127375273",
       "website_url": "http://www.180andtapped.com",
       "state": "Pennsylvania",
+<<<<<<< HEAD
       "street": "2010 A State Ave"
+=======
+      "street": "2010 A State Ave",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "46839a79-b7bf-4733-b91b-ce116d062a57",
@@ -772,7 +982,12 @@
       "phone": "6623055907",
       "website_url": null,
       "state": "Mississippi",
+<<<<<<< HEAD
       "street": "100 B South Olive St"
+=======
+      "street": "100 B South Olive St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "1a1b2165-73ed-40aa-b89b-56794d140f22",
@@ -790,7 +1005,12 @@
       "phone": "4142364056",
       "website_url": "http://www.1840brewing.com",
       "state": "Wisconsin",
+<<<<<<< HEAD
       "street": "342 E Ward St"
+=======
+      "street": "342 E Ward St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "fe6b9893-b93e-43d5-a9f6-3e0c89a3f13c",
@@ -808,7 +1028,12 @@
       "phone": null,
       "website_url": "http://www.1850restaurant.com",
       "state": "California",
+<<<<<<< HEAD
       "street": null
+=======
+      "street": null,
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "b51f3cdf-60ff-4ae1-94a7-76906c7d62eb",
@@ -826,7 +1051,12 @@
       "phone": null,
       "website_url": "http://www.18thstreetbrewery.com",
       "state": "Indiana",
+<<<<<<< HEAD
       "street": "5725 Miller Ave"
+=======
+      "street": "5725 Miller Ave",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "add7f978-942e-4d56-b209-c80837a51d69",
@@ -844,7 +1074,12 @@
       "phone": null,
       "website_url": null,
       "state": "Indiana",
+<<<<<<< HEAD
       "street": "5417 Oakley Ave"
+=======
+      "street": "5417 Oakley Ave",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "dbde8235-2b55-4d8b-8b1c-438155abe104",
@@ -862,7 +1097,12 @@
       "phone": "2172549374",
       "website_url": "http://1905BrewingCompany.com",
       "state": "Illinois",
+<<<<<<< HEAD
       "street": "1301 S Chestnut St"
+=======
+      "street": "1301 S Chestnut St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "4f4b5b34-d572-4dff-a18f-47e507c073e6",
@@ -880,7 +1120,12 @@
       "phone": "5202564851",
       "website_url": "http://www.1912brewing.com",
       "state": "Arizona",
+<<<<<<< HEAD
       "street": "2045 N Forbes Blvd Ste 105"
+=======
+      "street": "2045 N Forbes Blvd Ste 105",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     },
     {
       "id": "4ccad9b9-f9cf-4d21-b6d5-ab005ee1532d",
@@ -898,6 +1143,7 @@
       "phone": "4254242337",
       "website_url": "http://www.192brewing.com",
       "state": "Washington",
+<<<<<<< HEAD
       "street": "7324 NE 175th St"
     },
     {
@@ -912,6 +1158,10 @@
       "website_url": "https://cloudzvape.com/",
       "phone": "4065341015",
       "id": "-8GwFuK"
+=======
+      "street": "7324 NE 175th St",
+      "pet_friendly": false
+>>>>>>> 1cfc819b819059bbae294a3dbe7451f4878259d6
     }
   ]
 }
