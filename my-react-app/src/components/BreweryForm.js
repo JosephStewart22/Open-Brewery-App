@@ -1,19 +1,66 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-const BreweryForm = () => {
+const BreweryForm = ({onAddBrewery}) => {
+  const [formData, setFormData] = useState({
+    image: "",
+    name: "",
+    city: "", 
+    state: "",
+    //thumbnail: "",
+    address: "",
+    postal_code: "",
+    country: "",
+    website_url: "",
+    phone: "",
+  })
+
+function handleChange(e) {
+  setFormData({
+    ...formData,
+    [e.target.name]: e.target.value,
+  })
+}
+
+function handleSubmit(e) {
+  e.preventDefault()
+  const newBrewery = {
+    image: formData.image,
+    name: formData.name,
+    city: formData.city,
+    state: formData.state,
+    //thumbnail: formData.thumbnail,
+    address: formData.address,
+    postal_code: formData.postal_code,
+    country: formData.country,
+    website_url: formData.website_url,
+    phone: formData.phone,
+  }
+
+  fetch("http://localhost:4000/breweries", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(formData)
+  })
+  .then(r => r.json())
+  .then(onAddBrewery)
+}
+
   return (
     <div style={{ display: 'block', 
                   width: 700, 
                   padding: 30 }}
                   className='m-auto'>
+      <h4>Don't see a brewery? Add it!</h4>
+      <Form id='brewery-form' onSubmit={handleSubmit}>
       <h4>Don't see a 🍻 brewery? Add it!</h4>
-      <Form id='brewery-form'>
       <Form.Group>
           <Form.Label>Brewery name:</Form.Label>
-          <Form.Control type="text" 
-                        placeholder="Enter brewery name" />
+          <Form.Control name="name" type="text" 
+                        placeholder="Enter brewery name" value={formData.name} onChange={handleChange}/>
         </Form.Group>
         <Form.Group>
           <Form.Label>Brewery type:</Form.Label>
@@ -41,31 +88,31 @@ const BreweryForm = () => {
        </Form.Group>
         <Form.Group>
           <Form.Label>Address:</Form.Label>
-          <Form.Control type="text" placeholder="Enter address" />
+          <Form.Control name="address" type="text" placeholder="Enter address" />
         </Form.Group>
         <Form.Group>
           <Form.Label>City:</Form.Label>
-          <Form.Control type="text" placeholder="Enter city" />
+          <Form.Control name="city" type="text" placeholder="Enter city" value={formData.city} onChange={handleChange}/>
         </Form.Group>
         <Form.Group>
           <Form.Label>State:</Form.Label>
-          <Form.Control type="text" placeholder="Enter state" />
+          <Form.Control name="state" type="text" placeholder="Enter state" value={formData.state} onChange={handleChange}/>
         </Form.Group>
         <Form.Group>
           <Form.Label>Postal code:</Form.Label>
-          <Form.Control type="text" placeholder="Enter postal code" />
+          <Form.Control name="postal_code" type="text" placeholder="Enter postal code" value={formData.postal_code} onChange={handleChange}/>
         </Form.Group>
         <Form.Group>
           <Form.Label>Country:</Form.Label>
-          <Form.Control type="text" placeholder="Enter country" />
+          <Form.Control name="country" type="text" placeholder="Enter country" value={formData.country} onChange={handleChange}/>
         </Form.Group>
         <Form.Group>
           <Form.Label>Phone number:</Form.Label>
-          <Form.Control type="number" placeholder="Enter phone number" />
+          <Form.Control name="phone" type="number" placeholder="Enter phone number" value={formData.phone} onChange={handleChange}/>
         </Form.Group>
         <Form.Group>
           <Form.Label>Website:</Form.Label>
-          <Form.Control type="text" placeholder="Enter URL" />
+          <Form.Control name="website_url" type="text" placeholder="Enter URL" value={formData.website_url} onChange={handleChange}/>
         </Form.Group>
         <Button variant="primary" type="submit">
            Add brewery

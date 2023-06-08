@@ -20,18 +20,25 @@ const allBreweries = ("http://localhost:4000/breweries")
       .then(res => res.json())
       .then(setBreweries)
   }, [])
+  function handleAddBrewery(newBrewery) {
+    setBreweries([...breweries, newBrewery])
+  }
+  function handleRemoveBrewery(id) {
+    const unaddBreweries = breweries.filter((brewery) => brewery.id !== id);
+    setBreweries(unaddBreweries)
+  }
 
   const displayedBreweries = breweries.filter((brewery) => brewery.name.toLowerCase().includes(searchTerm.toLowerCase()))
 
   return (
   <div className={isDarkMode ? "light" : "dark"}>
     <BrowserRouter>
-      <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} setSearchTerm={searchTerm}/>
+      <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} onChangeSearch={setSearchTerm}/>
         <Switch>
           <Route exact path='/breweries'>
-              <BreweryContainer breweries={displayedBreweries} />
+              <BreweryContainer breweries={displayedBreweries} onRemoveBrewery={handleRemoveBrewery} onAddBrewery={handleAddBrewery}/>
           </Route>
-          <Route path='/add-brewery' component={BreweryForm} /> 
+          <Route path='/add-brewery' component={BreweryForm}/>
         </Switch>
     </BrowserRouter>
     </div>

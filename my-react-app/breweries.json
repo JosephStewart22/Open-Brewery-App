@@ -55,7 +55,7 @@
       "website_url": "http://10barrel.com",
       "state": "California",
       "street": "1501 E St",
-      "pet_friendly": false
+      "pet_friendly": true
     },
     {
       "id": "6d14b220-8926-4521-8d19-b98a2d6ec3db",
@@ -74,7 +74,7 @@
       "website_url": "http://www.10barrel.com",
       "state": "Oregon",
       "street": "62970 18th St",
-      "pet_friendly": false
+      "pet_friendly": true
     },
     {
       "id": "e2e78bd8-80ff-4a61-a65c-3bfbd9d76ce2",
@@ -891,7 +891,7 @@
       "website_url": null,
       "state": "Indiana",
       "street": "5417 Oakley Ave",
-      "pet_friendly": false
+      "pet_friendly": true
     },
     {
       "id": "dbde8235-2b55-4d8b-8b1c-438155abe104",
@@ -949,6 +949,18 @@
       "state": "Washington",
       "street": "7324 NE 175th St",
       "pet_friendly": false
+    },
+    {
+      "image": "",
+      "name": "new brewery",
+      "city": "",
+      "state": "",
+      "address": "",
+      "postal_code": "",
+      "country": "",
+      "website_url": "",
+      "phone": "",
+      "id": "K9PKtiP"
     }
   ]
 }
