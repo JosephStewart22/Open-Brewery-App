@@ -3,7 +3,7 @@ import style from './style.css';
 import Navigation from './Navigation';
 import BreweryContainer from './BreweryContainer';
 import BreweryForm from './BreweryForm';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 
 const App = () => {
@@ -22,20 +22,18 @@ const allBreweries = ("http://localhost:4000/breweries")
   }, [])
 
   const displayedBreweries = breweries.filter((brewery) => brewery.name.toLowerCase().includes(searchTerm.toLowerCase()))
+
   return (
-    <div className={isDarkMode ? "light" : "dark"}>
-        <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} setSearchTerm={searchTerm}/>
-        <br /><br />
+  <div className={isDarkMode ? "light" : "dark"}>
+    <BrowserRouter>
+      <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} setSearchTerm={searchTerm}/>
         <Switch>
-        <Route 
-          path='/breweries'
-          render={() => <BreweryContainer breweries={displayedBreweries} /> }
-          />        
-        <Route 
-          path='/add-brewery'
-          render={() => <BreweryForm /> }
-          />
+          <Route exact path='/breweries'>
+              <BreweryContainer breweries={displayedBreweries} />
+          </Route>
+          <Route path='/add-brewery' component={BreweryForm} /> 
         </Switch>
+    </BrowserRouter>
     </div>
   )
 }

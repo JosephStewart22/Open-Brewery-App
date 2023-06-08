@@ -5,6 +5,7 @@ import Button  from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import {LinkContainer} from 'react-router-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -24,7 +25,9 @@ function handleSearch(e) {
   return (
     <Navbar bg="light" expand="lg" sticky='top'>
       <Container fluid>
-        <Navbar.Brand href="#">The Brew List</Navbar.Brand>
+        <LinkContainer to='/breweries'>
+            <Navbar.Brand href="#">The Brew List</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -32,7 +35,9 @@ function handleSearch(e) {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="">Add Brewery</Nav.Link>
+            <LinkContainer to='/add-brewery'>
+                <Nav.Link href="">Add Brewery</Nav.Link>
+            </LinkContainer>
             <NavDropdown title="Filter by Type" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action4">
                 Micro
