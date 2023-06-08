@@ -36,7 +36,7 @@ const Brewery = ({brewery, onRemoveBrewery, id}) => {
           {brewery.city}, {brewery.state}
         </Card.Text>
         <Button variant={brewery.pet_friendly === true ? 'outline-success' : "outline-primary"} className='me-2' onClick={patchBrewery}>{brewery.pet_friendly === true ? "🐶 ✅" : "Click if Pet Friendly"}</Button>
-        <Button variant="outline-secondary" className='me-2'>Delete</Button>
+        <Button variant="outline-secondary" className='me-2'onClick={handleDelete}>Delete</Button>
       </Card.Body>
     </Card>  )
 }

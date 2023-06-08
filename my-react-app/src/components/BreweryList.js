@@ -4,9 +4,9 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 
-const BreweryList = ({breweries}) => {
+const BreweryList = ({breweries, onRemoveBrewery}) => {
  const brewCards = breweries.map((brewery) => (
-  <Brewery key={brewery.id} brewery={brewery} />
+  <Brewery key={brewery.id} brewery={brewery} onRemoveBrewery={onRemoveBrewery}/>
  ))
   const imageArray = [
     "https://cdn.pixabay.com/photo/2012/07/26/20/55/barrels-52934_1280.jpg",
@@ -39,7 +39,7 @@ const BreweryList = ({breweries}) => {
   })
   
   const renderAllBrewery = newBreweryArray.map((brewery) => {
-    return <Brewery brewery={brewery} key={brewery.id}  />
+    return <Brewery brewery={brewery} key={brewery.id}  onRemoveBrewery={onRemoveBrewery}/>
   })
 
   return (

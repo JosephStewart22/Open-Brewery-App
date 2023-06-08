@@ -8,7 +8,7 @@ const BreweryForm = ({onAddBrewery}) => {
     name: "",
     city: "", 
     state: "",
-    thumbnail: "",
+    //thumbnail: "",
     address: "",
     postal_code: "",
     country: "",
@@ -30,7 +30,7 @@ function handleSubmit(e) {
     name: formData.name,
     city: formData.city,
     state: formData.state,
-    thumbnail: formData.thumbnail,
+    //thumbnail: formData.thumbnail,
     address: formData.address,
     postal_code: formData.postal_code,
     country: formData.country,
@@ -43,7 +43,7 @@ function handleSubmit(e) {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(newBrewery)
+    body: JSON.stringify(formData)
   })
   .then(r => r.json())
   .then(onAddBrewery)
@@ -57,7 +57,6 @@ function handleSubmit(e) {
       <h4>Don't see a brewery? Add it!</h4>
       <Form id='brewery-form' onSubmit={handleSubmit}>
       <h4>Don't see a 🍻 brewery? Add it!</h4>
-      <Form id='brewery-form'>
       <Form.Group>
           <Form.Label>Brewery name:</Form.Label>
           <Form.Control name="name" type="text" 
@@ -118,7 +117,6 @@ function handleSubmit(e) {
         <Button variant="primary" type="submit">
            Add brewery
         </Button>
-      </Form>
       </Form>
     </div>  
     )
