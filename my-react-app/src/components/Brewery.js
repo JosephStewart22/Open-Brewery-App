@@ -3,7 +3,14 @@ import { Button } from 'react-bootstrap'
 import { Card } from 'react-bootstrap'
 import { render } from '@testing-library/react'
 
-const Brewery = ({brewery}) => {
+const Brewery = ({brewery, onRemoveBrewery, id}) => {
+
+  function handleDelete() {
+    fetch(`http://localhost:4000/breweries/${id}`, {
+      method: "DELETE",
+    })
+    onRemoveBrewery(id)
+  }
 
   return (
     <Card style={{ width: '18rem' }} className='m-3'>
@@ -14,7 +21,7 @@ const Brewery = ({brewery}) => {
           {brewery.city}, {brewery.state}
         </Card.Text>
         <Button variant="outline-primary" className='me-2'>Pet Friendly?</Button>
-        <Button variant="outline-secondary" className='me-2'>Delete</Button>
+        <Button variant="outline-secondary" className='me-2' onClick={handleDelete}>Delete</Button>
       </Card.Body>
     </Card>  )
 }

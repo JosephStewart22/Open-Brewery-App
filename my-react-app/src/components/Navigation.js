@@ -11,7 +11,7 @@ import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 
-const Navigation = ({searchTerm, onSetSearch, isDarkMode, setIsDarkMode}) => {
+const Navigation = ({searchTerm, onChangeSearch, isDarkMode, setIsDarkMode}) => {
 
 const toggleDarkMode = (e) => {
   e.preventDefault()
@@ -20,7 +20,7 @@ const toggleDarkMode = (e) => {
 
 function handleSearch(e) {
   e.preventDefault()
-  onSetSearch(e.target.value)
+  onChangeSearch(e.target.value)
 }
   return (
     <Navbar bg="light" expand="lg" sticky='top'>
