@@ -4,11 +4,10 @@ import Button from 'react-bootstrap/Button'
 
 const BreweryForm = ({onAddBrewery}) => {
   const [formData, setFormData] = useState({
-    image: "",
     name: "",
     city: "", 
     state: "",
-    //thumbnail: "",
+    pet_friendly: "",
     address: "",
     postal_code: "",
     country: "",
@@ -26,11 +25,10 @@ function handleChange(e) {
 function handleSubmit(e) {
   e.preventDefault()
   const newBrewery = {
-    image: formData.image,
     name: formData.name,
     city: formData.city,
     state: formData.state,
-    //thumbnail: formData.thumbnail,
+    pet_friendly: formData.pet_friendly,
     address: formData.address,
     postal_code: formData.postal_code,
     country: formData.country,
@@ -46,15 +44,17 @@ function handleSubmit(e) {
     body: JSON.stringify(formData)
   })
   .then(r => r.json())
-  .then(onAddBrewery)
+  .then((newBreweryData) => {
+    onAddBrewery(newBreweryData)
+    e.target.reset()
+  })
 }
 
-  return (
+return (
     <div style={{ display: 'block', 
                   width: 700, 
                   padding: 30 }}
                   className='m-auto'>
-      <h4>Don't see a brewery? Add it!</h4>
       <Form id='brewery-form' onSubmit={handleSubmit}>
       <h4>Don't see a 🍻 brewery? Add it!</h4>
       <Form.Group>
@@ -114,6 +114,7 @@ function handleSubmit(e) {
           <Form.Label>Website:</Form.Label>
           <Form.Control name="website_url" type="text" placeholder="Enter URL" value={formData.website_url} onChange={handleChange}/>
         </Form.Group>
+        <br />
         <Button variant="primary" type="submit">
            Add brewery
         </Button>

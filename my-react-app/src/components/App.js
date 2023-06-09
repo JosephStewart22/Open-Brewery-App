@@ -11,9 +11,9 @@ const [searchTerm, setSearchTerm] = useState("");
 const [breweries, setBreweries] = useState([])
 
 const allBreweries = ("http://localhost:4000/breweries")
-
   
   const [isDarkMode, setIsDarkMode] = useState("false")
+  const [breweryType, setBreweryType] = useState("all")
 
   useEffect(() => {
     fetch(allBreweries)
@@ -28,17 +28,36 @@ const allBreweries = ("http://localhost:4000/breweries")
     setBreweries(unaddBreweries)
   }
 
-  const displayedBreweries = breweries.filter((brewery) => brewery.name.toLowerCase().includes(searchTerm.toLowerCase()))
+  const breweryTypeResult = () => {
+    if (breweryType === "pet_friendly") {
+      return breweries.filter((brewery) => {
+        return brewery.pet_friendly == true
+      })
+    }
+    else if (breweryType !== "all") {
+      return breweries.filter((brewery) => {
+        console.log(brewery.brewery_type, breweryType)
+        return brewery.brewery_type === breweryType
+      })
+      } else {
+    return breweries
+  }
+  }
+
+  const displayedBreweries = breweryTypeResult().filter((brewery) => brewery.name.toLowerCase().includes(searchTerm.toLowerCase()))
 
   return (
   <div className={isDarkMode ? "light" : "dark"}>
     <BrowserRouter>
-      <Navigation isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} onChangeSearch={setSearchTerm}/>
+      <Navigation breweries={breweries} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} onChangeSearch={setSearchTerm} breweryType={breweryType} setBreweryType={setBreweryType} />
+      <br /><br />
         <Switch>
           <Route exact path='/breweries'>
-              <BreweryContainer breweries={displayedBreweries} onRemoveBrewery={handleRemoveBrewery} onAddBrewery={handleAddBrewery}/>
+              <BreweryContainer breweries={displayedBreweries} onRemoveBrewery={handleRemoveBrewery} onAddBrewery={handleAddBrewery} isDarkMode={isDarkMode} />
           </Route>
-          <Route path='/add-brewery' component={BreweryForm}/>
+          <Route path='/add-brewery'>
+              <BreweryForm onAddBrewery={handleAddBrewery}/>
+          </Route>
         </Switch>
     </BrowserRouter>
     </div>

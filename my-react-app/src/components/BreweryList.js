@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 
-const BreweryList = ({breweries, onRemoveBrewery}) => {
+const BreweryList = ({breweries, onRemoveBrewery, isDarkMode}) => {
  const brewCards = breweries.map((brewery) => (
   <Brewery key={brewery.id} brewery={brewery} onRemoveBrewery={onRemoveBrewery}/>
  ))
@@ -39,7 +39,7 @@ const BreweryList = ({breweries, onRemoveBrewery}) => {
   })
   
   const renderAllBrewery = newBreweryArray.map((brewery) => {
-    return <Brewery brewery={brewery} key={brewery.id}  onRemoveBrewery={onRemoveBrewery}/>
+    return <Brewery brewery={brewery} key={brewery.id}  onRemoveBrewery={onRemoveBrewery} isDarkMode={isDarkMode} />
   })
 
   return (
