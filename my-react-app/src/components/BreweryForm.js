@@ -88,7 +88,7 @@ return (
        </Form.Group>
         <Form.Group>
           <Form.Label>Address:</Form.Label>
-          <Form.Control name="address" type="text" placeholder="Enter address" />
+          <Form.Control name="address" type="text" placeholder="Enter address" value={formData.address} onChange={handleChange}/>
         </Form.Group>
         <Form.Group>
           <Form.Label>City:</Form.Label>

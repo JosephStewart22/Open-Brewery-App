@@ -6,10 +6,10 @@ import { render } from '@testing-library/react'
 const Brewery = ({brewery, isDarkMode, onRemoveBrewery, id}) => {
 
   function handleDelete() {
-    fetch(`http://localhost:4000/breweries/${id}`, {
+    fetch(`http://localhost:4000/breweries/${brewery.id}`, {
       method: "DELETE",
     })
-    onRemoveBrewery(id)
+    onRemoveBrewery(brewery.id)
   }
 
   const patchBrewery = () => {
