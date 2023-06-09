@@ -36,12 +36,12 @@
       "website_url": "http://www.512brewing.com",
       "state": "Texas",
       "street": "407 Radam Ln Ste F200",
-      "pet_friendly": true
+      "pet_friendly": false
     },
     {
       "id": "ef970757-fe42-416f-931d-722451f1f59c",
       "name": "10 Barrel Brewing Co",
-      "brewery_type": "large",
+      "brewery_type": "nano",
       "address_1": "1501 E St",
       "address_2": null,
       "address_3": null,
@@ -55,7 +55,7 @@
       "website_url": "http://10barrel.com",
       "state": "California",
       "street": "1501 E St",
-      "pet_friendly": true
+      "pet_friendly": false
     },
     {
       "id": "6d14b220-8926-4521-8d19-b98a2d6ec3db",
@@ -949,6 +949,30 @@
       "state": "Washington",
       "street": "7324 NE 175th St",
       "pet_friendly": false
+    },
+    {
+      "image": "",
+      "name": "47 Hills Brewing Company",
+      "city": "South San Francisco",
+      "state": "California",
+      "address": "",
+      "postal_code": "94080",
+      "country": "USA",
+      "website_url": "http://47hillsbrewingcompany.com/",
+      "phone": "6508678476",
+      "id": "5CM2pS_"
+    },
+    {
+      "name": "Gilman Brewing Company Taproom and Gastropub",
+      "city": "Daly City",
+      "state": "CA",
+      "pet_friendly": "",
+      "address": "",
+      "postal_code": "94015",
+      "country": "United States",
+      "website_url": "https://gilmanbrew.com/",
+      "phone": "6507314241",
+      "id": "DhsK689"
     }
   ]
 }

@@ -11,7 +11,7 @@ import { faSun } from '@fortawesome/free-solid-svg-icons';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 
-const Navigation = ({searchTerm, onChangeSearch, isDarkMode, setIsDarkMode}) => {
+const Navigation = ({ searchTerm, onChangeSearch, isDarkMode, setIsDarkMode, setBreweryType}) => {
 
 const toggleDarkMode = (e) => {
   e.preventDefault()
@@ -22,8 +22,13 @@ function handleSearch(e) {
   e.preventDefault()
   onChangeSearch(e.target.value)
 }
+
+const handleFilter = (e) => {
+  setBreweryType(e)
+}
+
   return (
-    <Navbar bg="light" expand="lg" sticky='top'>
+    <Navbar bg={isDarkMode ? 'light' : 'secondary'} expand="lg" sticky='top'>
       <Container fluid>
         <LinkContainer to='/breweries'>
             <Navbar.Brand href="#">The Brew List</Navbar.Brand>
@@ -38,23 +43,27 @@ function handleSearch(e) {
             <LinkContainer to='/add-brewery'>
                 <Nav.Link href="">Add Brewery</Nav.Link>
             </LinkContainer>
-            <NavDropdown title="Filter by Type" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action4">
-                Micro
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Nano
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                BrewPub
-              </NavDropdown.Item>
+            <NavDropdown title="Filter by Type" id="navbarScrollingDropdown" onSelect={handleFilter}>
+            <NavDropdown.Item eventKey='all'>
+                  All
+            </NavDropdown.Item>
+                <NavDropdown.Item eventKey='micro'>
+                  Micro
+                </NavDropdown.Item>
+                <NavDropdown.Item eventKey='large'>
+                  Large
+                </NavDropdown.Item>
+                <NavDropdown.Item eventKey='brewpub'>
+                  BrewPub
+                </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
+              <NavDropdown.Item eventKey='pet_friendly'>
                 Pet Friendly
               </NavDropdown.Item>
+
             </NavDropdown>
           </Nav>
-          <Button variant="outline-secondary" onClick={toggleDarkMode} className='me-2'>{isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} />}</Button>
+          <Button variant={isDarkMode ? 'outline-secondary' : 'light'} onClick={toggleDarkMode} className='me-2'>{isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} />}</Button>
           <Form className="d-flex" >
             <Form.Control
               type="search"
