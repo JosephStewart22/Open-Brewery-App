@@ -28,15 +28,15 @@ const Brewery = ({brewery, isDarkMode, onRemoveBrewery, id}) => {
   }
 
   return (
-    <Card bg={isDarkMode ? null : 'dark' } border={isDarkMode ? null : 'dark'} id="brewery-card" style={{ width: '18rem' }} className='m-3'>
+    <Card bg={isDarkMode ? null : 'dark' } border={isDarkMode ? 'dark' : 'light'} id="brewery-card" style={{ width: '18rem' }} className='m-3'>
       <Card.Img id="card-img" variant="top" src={brewery.image} />
       <Card.Body>
-        <Card.Title><a href={brewery.website_url}>{brewery.name}</a></Card.Title>
-        <Card.Text>
+        <Card.Title className={isDarkMode ? 'text-dark' : 'text-light'}><a href={brewery.website_url}>{brewery.name}</a></Card.Title>
+        <Card.Text className={isDarkMode ? 'text-dark' : 'text-light'}>
           {brewery.city}, {brewery.state}
         </Card.Text>
         <Button variant={brewery.pet_friendly === true ? 'outline-success' : "outline-primary"} className='me-2' onClick={patchBrewery}>{brewery.pet_friendly === true ? "🐶 ✅" : "Click if Pet Friendly"}</Button>
-        <Button variant="outline-secondary" className='me-2'onClick={handleDelete}>Delete</Button>
+        <Button variant="outline-danger" className='me-2'onClick={handleDelete}>Delete</Button>
       </Card.Body>
     </Card>  )
 }

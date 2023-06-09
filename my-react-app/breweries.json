@@ -17,7 +17,7 @@
       "website_url": "http://www.405brewing.com",
       "state": "Oklahoma",
       "street": "1716 Topeka St",
-      "pet_friendly": true 
+      "pet_friendly": true
     },
     {
       "id": "9c5a66c8-cc13-416f-a5d9-0a769c87d318",
@@ -963,28 +963,16 @@
       "id": "5CM2pS_"
     },
     {
-      "name": "47 Hills Brewing Company",
-      "city": "South San Francisco",
+      "name": "Gilman Brewing Company Taproom and Gastropub",
+      "city": "Daly City",
       "state": "CA",
       "pet_friendly": "",
       "address": "",
-      "postal_code": "94080",
+      "postal_code": "94015",
       "country": "United States",
-      "website_url": "http://47hillsbrewingcompany.com/",
-      "phone": "6508678476",
-      "id": "x9jiIeg"
-    },
-    {
-      "name": "47 Hills Brewing Company",
-      "city": "South San Francisco",
-      "state": "CA",
-      "pet_friendly": "",
-      "address": "",
-      "postal_code": "94080",
-      "country": "United States",
-      "website_url": "http://47hillsbrewingcompany.com/",
-      "phone": "6508678476",
-      "id": "qtrJhZH"
+      "website_url": "https://gilmanbrew.com/",
+      "phone": "6507314241",
+      "id": "DhsK689"
     }
   ]
 }

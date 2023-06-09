@@ -7,7 +7,7 @@
 }
 
 .dark {
-    background-color: black;
+    background-color: #21252A;
     color: white;
     transition-duration: 1s;
 }
@@ -23,4 +23,5 @@
 
 .card-img-top {
     width: 300px;
+    padding-left: 0%;
 }

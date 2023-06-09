@@ -28,7 +28,7 @@ const handleFilter = (e) => {
 }
 
   return (
-    <Navbar bg="light" expand="lg" sticky='top'>
+    <Navbar bg={isDarkMode ? 'light' : 'secondary'} expand="lg" sticky='top'>
       <Container fluid>
         <LinkContainer to='/breweries'>
             <Navbar.Brand href="#">The Brew List</Navbar.Brand>
@@ -50,10 +50,10 @@ const handleFilter = (e) => {
                 <NavDropdown.Item eventKey='micro'>
                   Micro
                 </NavDropdown.Item>
-                <NavDropdown.Item eventKey='nano'>
-                  Nano
+                <NavDropdown.Item eventKey='large'>
+                  Large
                 </NavDropdown.Item>
-                <NavDropdown.Item eventKey='pub'>
+                <NavDropdown.Item eventKey='brewpub'>
                   BrewPub
                 </NavDropdown.Item>
               <NavDropdown.Divider />
@@ -63,7 +63,7 @@ const handleFilter = (e) => {
 
             </NavDropdown>
           </Nav>
-          <Button variant="outline-secondary" onClick={toggleDarkMode} className='me-2'>{isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} />}</Button>
+          <Button variant={isDarkMode ? 'outline-secondary' : 'light'} onClick={toggleDarkMode} className='me-2'>{isDarkMode ? <FontAwesomeIcon icon={faSun}/> : <FontAwesomeIcon icon={faMoon} />}</Button>
           <Form className="d-flex" >
             <Form.Control
               type="search"
