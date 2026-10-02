@@ -1,0 +1,308 @@
+/* =========================================
+   THE BREW LIST - NAVBAR
+   ========================================= */
+
+.brewery-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  min-height: 72px;
+  border-bottom: 1px solid;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   LIGHT MODE
+   ========================================= */
+
+.brewery-navbar.navbar-light-mode {
+  background-color: #ffffff !important;
+  border-color: #e5e7eb !important;
+}
+
+.brewery-navbar.navbar-light-mode .navbar-brand,
+.brewery-navbar.navbar-light-mode .nav-link,
+.brewery-navbar.navbar-light-mode .navbar-nav .nav-link {
+  color: #1f2937 !important;
+}
+
+.brewery-navbar.navbar-light-mode .nav-link:hover,
+.brewery-navbar.navbar-light-mode .nav-link:focus {
+  color: #111827 !important;
+}
+
+/* =========================================
+   DARK MODE
+   ========================================= */
+
+.brewery-navbar.navbar-dark-mode {
+  background-color: #171a1f !important;
+  border-color: #2c323a !important;
+}
+
+.brewery-navbar.navbar-dark-mode .navbar-brand,
+.brewery-navbar.navbar-dark-mode .nav-link,
+.brewery-navbar.navbar-dark-mode .navbar-nav .nav-link {
+  color: #f5f7fa !important;
+}
+
+.brewery-navbar.navbar-dark-mode .nav-link:hover,
+.brewery-navbar.navbar-dark-mode .nav-link:focus {
+  color: #ffffff !important;
+}
+
+/* =========================================
+   BRAND
+   ========================================= */
+
+.brewery-brand {
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.brand-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  font-size: 0.7rem;
+  opacity: 0.65;
+  margin-top: 3px;
+}
+
+/* =========================================
+   NAV LINKS
+   ========================================= */
+
+.brewery-nav-links {
+  align-items: center;
+  gap: 6px;
+}
+
+.brewery-nav-links .nav-link {
+  padding: 10px 14px !important;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.brewery-navbar.navbar-light-mode .brewery-nav-links .nav-link:hover {
+  background-color: #f3f4f6;
+}
+
+.brewery-navbar.navbar-dark-mode .brewery-nav-links .nav-link:hover {
+  background-color: #252a31;
+}
+
+/* Add Brewery */
+
+.add-brewery-link {
+  display: flex !important;
+  align-items: center;
+  gap: 7px;
+}
+
+.nav-icon {
+  font-size: 0.8rem;
+}
+
+/* =========================================
+   DROPDOWN
+   ========================================= */
+
+.brewery-navbar .dropdown-menu {
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 6px;
+}
+
+.brewery-navbar.navbar-light-mode .dropdown-menu {
+  background-color: #ffffff !important;
+}
+
+.brewery-navbar.navbar-light-mode .dropdown-item {
+  color: #1f2937 !important;
+  border-radius: 7px;
+}
+
+.brewery-navbar.navbar-light-mode .dropdown-item:hover {
+  background-color: #f3f4f6 !important;
+  color: #111827 !important;
+}
+
+.brewery-navbar.navbar-dark-mode .dropdown-menu {
+  background-color: #1d2228 !important;
+  border-color: #343a43;
+}
+
+.brewery-navbar.navbar-dark-mode .dropdown-item {
+  color: #f5f7fa !important;
+}
+
+.brewery-navbar.navbar-dark-mode .dropdown-item:hover {
+  background-color: #2a3038 !important;
+  color: #ffffff !important;
+}
+
+/* =========================================
+   SEARCH
+   ========================================= */
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.brewery-search {
+  position: relative;
+  width: 260px;
+}
+
+.brewery-search .search-icon {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.brewery-navbar.navbar-light-mode .brewery-search .search-icon {
+  color: #6b7280;
+}
+
+.brewery-navbar.navbar-dark-mode .brewery-search .search-icon {
+  color: #9ca3af;
+}
+
+.brewery-search .form-control {
+  padding-left: 38px;
+  border-radius: 10px;
+  height: 42px;
+}
+
+.brewery-navbar.navbar-light-mode .brewery-search .form-control {
+  background-color: #f8fafc !important;
+  color: #1f2937 !important;
+  border-color: #e5e7eb !important;
+}
+
+.brewery-navbar.navbar-light-mode .brewery-search .form-control::placeholder {
+  color: #9ca3af !important;
+}
+
+.brewery-navbar.navbar-dark-mode .brewery-search .form-control {
+  background-color: #22272e !important;
+  color: #ffffff !important;
+  border-color: #343a43 !important;
+}
+
+.brewery-navbar.navbar-dark-mode .brewery-search .form-control::placeholder {
+  color: #9ca3af !important;
+}
+
+/* =========================================
+   THEME TOGGLE
+   ========================================= */
+
+.theme-toggle {
+  border: none !important;
+  text-decoration: none !important;
+  font-size: 1.1rem;
+  padding: 8px 10px !important;
+}
+
+.brewery-navbar.navbar-light-mode .theme-toggle {
+  color: #374151 !important;
+}
+
+.brewery-navbar.navbar-light-mode .theme-toggle:hover {
+  color: #111827 !important;
+}
+
+.brewery-navbar.navbar-dark-mode .theme-toggle {
+  color: #f5f7fa !important;
+}
+
+.brewery-navbar.navbar-dark-mode .theme-toggle:hover {
+  color: #ffffff !important;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+.brewery-navbar .navbar-toggler {
+  border: 1px solid #9ca3af !important;
+  border-radius: 8px;
+}
+
+.brewery-navbar.navbar-dark-mode .navbar-toggler {
+  border-color: #6b7280 !important;
+}
+
+.brewery-navbar.navbar-dark-mode .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 991px) {
+  .brewery-brand {
+    margin-right: 0;
+  }
+
+  .brewery-nav-links {
+    align-items: stretch;
+    margin-top: 15px;
+  }
+
+  .navbar-actions {
+    margin-left: 0;
+    margin-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .brewery-search {
+    flex: 1;
+    width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .brand-subtitle {
+    display: none;
+  }
+
+  .brand-name {
+    font-size: 1rem;
+  }
+
+  .brand-icon {
+    font-size: 26px;
+  }
+
+  .navbar-actions {
+    width: 100%;
+  }
+
+  .brewery-search {
+    width: 100%;
+  }
+}
